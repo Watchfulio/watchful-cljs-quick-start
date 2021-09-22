@@ -10,7 +10,7 @@
   (let [{:keys [animals]} @state]
     [:div
       {:style {:font-size "1em"}}
-      "Hello, Shayan's friend!"
+      "Hello, friend!"
       (into [:ul] (map #(vector :li %)) animals)]))
 
 (dom/render [hello app-state] (gdom/getElement "app"))
